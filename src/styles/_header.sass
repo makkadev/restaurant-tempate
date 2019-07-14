@@ -1,0 +1,92 @@
+.header
+    position: fixed
+    display: flex
+    z-index: 9999
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    width: 100%
+    .logo-side
+        display: flex
+        justify-content: center
+        align-items: center
+        background: rgba(255, 255, 255, 0.9)
+        height: 116.28px
+        flex-basis: 60%
+        .logo
+            font-family: Quando
+            font-style: normal
+            font-weight: normal
+            font-size: 30px
+            line-height: 37px
+            color: #000000
+            span
+                top: 23px
+                font-family: Quando
+                font-style: normal
+                font-weight: normal
+                font-size: 48px
+                line-height: 60px
+                color: $deflaut
+    .menu-side
+        background: $deflaut
+        height: 116.28px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+        .hamburger-menu
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 55px
+            height: 55px
+            right: 20px
+            top: 35px
+            box-sizing: border-box
+            background-color: #ffffff
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 5px
+            color: $deflaut
+            .fa-utensils,
+            .fa-times
+                position: relative
+                font-size: 30px
+        nav
+            display: flex
+            position: absolute
+            z-index: 9999
+            transform: translateX(100%)
+            top: 116.28px
+            right: 0
+            background-color: $deflaut
+            height: 60vh
+            text-align: center
+            font-family: Roboto
+            font-weight: 700
+            font-size: 15px
+            color: #E5E5E5
+            text-transform: uppercase
+            cursor: pointer
+            transition: .5s
+            ul
+                list-style: none
+                display: flex
+                width: 70vw
+                flex-direction: column
+                justify-content: space-around
+                li
+                    color: #ffffff
+                    font-family: Quando
+                    opacity: 0
+                    &:hover
+                        color: #000
+        .nav-hamburger
+            transform: translateX(0%)
+
+@keyframes navLinksFade
+    from
+        opacity: 0
+        transform: translateX(50px)
+    to
+        opacity: 1
+        transform: translateX(0px)

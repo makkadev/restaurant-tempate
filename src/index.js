@@ -1,0 +1,10 @@
+import '@fortawesome/fontawesome-free/js/fontawesome'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/regular'
+import '@fortawesome/fontawesome-free/js/brands'
+import "../src/styles/style.sass"
+import './js/nav-hamburger'
+import './js/smoothScroll'
+import './js/gallery'
+import './js/accordion-button'
+import './js/slider'
