@@ -64,16 +64,6 @@ module.exports = {
                 collapseWhitespace: false
             }
         }),
-        new HtmlWebpackPlugin({
-            filename: 'menu.html',
-            template: './src/html/menu.html',
-            inject: true,
-            minify: {
-                removeComments: true,
-                collapseWhitespace: false
-            },
-            chunks: []
-        }),
         new MiniCssExtractPlugin({
             filename: 'css/main.css',
             // chunkFilename: '[id].css',
