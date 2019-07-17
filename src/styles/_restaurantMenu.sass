@@ -1,52 +1,79 @@
 .page-restaurant-menu
     display: flex
     flex-direction: column
-    position: relative
-    width: 100%
-    height: auto
-    background-color: #303030
-    .accordions-buttons
+    padding: 60px 20px
+    @media (orientation: landscape) and (min-width: 500px)
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+    .accordion
         display: flex
         flex-direction: column
-        position: relative
-        .accordion
+        justify-content: center
+        width: 100%
+        min-height: 200px
+        left: 0px
+        cursor: pointer
+        transition: all .3s
+        @media (orientation: landscape) and (min-width: 500px)
+            width: 45%
+        @media (min-width: 1024px)
+            min-height: 300px
+            margin: 40px 0
+        h3
+            color: #ffffff
+            z-index: 999
+            font-family: Kaushan Script
+            font-size: 36px
+            line-height: 40px
+            text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.65)
+            width: 50%
+            background-color: $deflaut
+            padding: 15px
+            border: 1px solid whitesmoke   
+    .cake
+        background: url("../images/deser1.jpg")
+        background-size: cover
+    .pasta
+        background: url("../images/pasta1.jpg")
+        background-size: cover
+    .pizza
+        background: url("../images/pizza.jpg")
+        background-size: cover
+    .sea
+        background: url("../images/mule.jpg")
+        background-size: cover
+    .accordion-content
+        background: whitesmoke
+        border-left: 5px $deflaut solid
+        max-height: 0
+        transition: max-height 0.2s ease-in-out
+        overflow: hidden
+        .menu-content
+            padding: 15px
             display: flex
-            justify-content: center
-            align-items: center
-            width: 100%
-            height: 140px
-            left: 0px
-            &.pasta
-                background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url("../images/makaron.jpg"), #C4C4C4
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                background-size: cover
-            &.pizza
-                background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url("../images/pizza.jpg"), #C4C4C4
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                background-size: cover
-            &.sea
-                background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url("../images/mule.jpg"), #C4C4C4
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                background-size: cover
-            &.cake
-                background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url("../images/deser1.jpg"), #C4C4C4
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-                background-size: cover
-            h3
-                color: #ffffff
-                z-index: 999
-                font-family: Kaushan Script
-                font-style: normal
-                font-weight: normal
-                font-size: 36px
-                line-height: 40px
-                text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.65)
-        .accordion-content
-            background: whitesmoke
-            border-left: 5px $deflaut solid
-            max-height: 0
-            transition: max-height 0.2s ease-in-out
-            .menu-content
-                padding: 15px
+            img
+                max-width: 100px
+                max-height: 100px
+                border-radius: 50%
+                margin-right: 20px
+                flex-basis: 30%
+                @media (orientation: landscape) and (min-width: 500px)
+                    max-width: 60px
+                    max-height: 60px
+            .menu-item
+                flex-basis: 70%
+                .title-product
+                    font-size: 1.5rem
+                    font-weight: 700
+                    @media (orientation: landscape) and (min-width: 500px)
+                        font-size: 1.1rem
+                .desc-product
+                    font-size: .8rem
+                    color: #9c9c9c
+                .price
+                    text-align: right
+                    color: $deflaut
+                    font-weight: 700
 .is-open
     max-height: 300px !important

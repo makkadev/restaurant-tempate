@@ -1,28 +1,37 @@
 .page-gallery
+    padding-bottom: 100px
     .images
         display: flex
         flex-direction: column
         max-width: 100%
         padding: 20px
-        background-color: $deflaut
+        background: $background
+        @media (orientation: landscape) and (min-width: 500px)
+            flex-direction: row-reverse
         .main-img
             position: relative
-            .arrow
-                display: flex
-                justify-content: space-between
-                position: absolute
-                width: 100%
-                bottom: 5%
-                font-size: 4rem
-                color: #ffffff
-                opacity: 0.7
+            @media (orientation: landscape) and (min-width: 500px)
+                flex-basis: 70%
             img
                 max-width: 100%
+                max-height: 70vh
+                @media (orientation: landscape) and (min-width: 500px)
+                   width: 90%
+                   height: 70vh
+                   object-fit: cover
         .imgs-thumb
             display: flex
             justify-content: space-between
+            @media (orientation: landscape) and (min-width: 500px)
+                flex-direction: column
+                flex-basis: 25%
+                max-height: 70vh
             img
-                width: 32%
+                width: 24%
+                @media (orientation: landscape) and (min-width: 500px)
+                   width: 90%
+                   height: 15vh
+                   object-fit: cover
 @keyframes fadeIn
     to
         opacity: 1

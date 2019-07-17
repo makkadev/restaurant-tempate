@@ -84,6 +84,10 @@ module.exports = {
                 {
                     family: "Roboto",
                     variants: ["400", "700"]
+                },
+                {
+                    family: "Montserrat",
+                    variants: ["400", "700", "900"]
                 }
             ],
             filename: 'css/font.css',

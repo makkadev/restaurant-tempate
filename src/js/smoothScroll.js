@@ -8,7 +8,7 @@ const contactBtn = document.querySelector('nav li:nth-of-type(5)');
 //Smooth Scroll function
 const smoothScroll = (section, duration) => {
     const target = document.querySelector(section);
-    const targetPosition = target.getBoundingClientRect().top - 116;
+    const targetPosition = target.getBoundingClientRect().top - 98;
     const startPosition = window.pageYOffset;
     let stratTime = null;
 

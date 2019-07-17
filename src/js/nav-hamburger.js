@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger-menu');
-const nav = document.querySelector('nav');
-const navLinks = document.querySelectorAll('nav li');
+const nav = document.querySelector('.navigation__menu');
+const navLinks = document.querySelectorAll('.navigation__menu li');
 const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 

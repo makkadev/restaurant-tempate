@@ -3,7 +3,7 @@ const accordionContent = document.querySelectorAll('.accordion-content');
 
 accordionsButtons.forEach((btn) => {
     function toggle() {
-        const content = btn.nextElementSibling;
+        const content = btn.children[1];
         if (content.style.maxHeight) {
             content.style.maxHeight = null;
         } else {
