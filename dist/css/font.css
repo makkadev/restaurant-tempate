@@ -1,0 +1,110 @@
+/* === Kaushan Script - regular */
+@font-face {
+	font-family: 'Kaushan Script';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/KaushanScript-Regular.eot");
+	src: local("Kaushan Script"),
+		local("KaushanScript-Regular"),
+		url("./font/KaushanScript-Regular.eot") format("embedded-opentype"),
+		url("./font/KaushanScript-Regular.woff2") format("woff2"),
+		url("./font/KaushanScript-Regular.woff") format("woff"),
+		url("./font/KaushanScript-Regular.ttf") format("truetype"),
+		url("./font/KaushanScript-Regular.svg") format("svg");
+}
+
+/* === Montserrat - regular */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/Montserrat-Regular.eot");
+	src: local("Montserrat Regular"),
+		local("Montserrat-Regular"),
+		url("./font/Montserrat-Regular.eot") format("embedded-opentype"),
+		url("./font/Montserrat-Regular.woff2") format("woff2"),
+		url("./font/Montserrat-Regular.woff") format("woff"),
+		url("./font/Montserrat-Regular.ttf") format("truetype"),
+		url("./font/Montserrat-Regular.svg") format("svg");
+}
+
+/* === Montserrat - 700 */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("./font/Montserrat-Bold.eot");
+	src: local("Montserrat Bold"),
+		local("Montserrat-Bold"),
+		url("./font/Montserrat-Bold.eot") format("embedded-opentype"),
+		url("./font/Montserrat-Bold.woff2") format("woff2"),
+		url("./font/Montserrat-Bold.woff") format("woff"),
+		url("./font/Montserrat-Bold.ttf") format("truetype"),
+		url("./font/Montserrat-Bold.svg") format("svg");
+}
+
+/* === Montserrat - 900 */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 900;
+	font-display: swap;
+	src: url("./font/Montserrat-Black.eot");
+	src: local("Montserrat Black"),
+		local("Montserrat-Black"),
+		url("./font/Montserrat-Black.eot") format("embedded-opentype"),
+		url("./font/Montserrat-Black.woff2") format("woff2"),
+		url("./font/Montserrat-Black.woff") format("woff"),
+		url("./font/Montserrat-Black.ttf") format("truetype"),
+		url("./font/Montserrat-Black.svg") format("svg");
+}
+
+/* === Quando - regular */
+@font-face {
+	font-family: 'Quando';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/Quando-Regular.eot");
+	src: local("Quando-Regular"),
+		url("./font/Quando-Regular.eot") format("embedded-opentype"),
+		url("./font/Quando-Regular.woff2") format("woff2"),
+		url("./font/Quando-Regular.woff") format("woff"),
+		url("./font/Quando-Regular.ttf") format("truetype"),
+		url("./font/Quando-Regular.svg") format("svg");
+}
+
+/* === Roboto - regular */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./font/Roboto-Regular.eot");
+	src: local("Roboto"),
+		local("Roboto-Regular"),
+		url("./font/Roboto-Regular.eot") format("embedded-opentype"),
+		url("./font/Roboto-Regular.woff2") format("woff2"),
+		url("./font/Roboto-Regular.woff") format("woff"),
+		url("./font/Roboto-Regular.ttf") format("truetype"),
+		url("./font/Roboto-Regular.svg") format("svg");
+}
+
+/* === Roboto - 700 */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("./font/Roboto-Bold.eot");
+	src: local("Roboto Bold"),
+		local("Roboto-Bold"),
+		url("./font/Roboto-Bold.eot") format("embedded-opentype"),
+		url("./font/Roboto-Bold.woff2") format("woff2"),
+		url("./font/Roboto-Bold.woff") format("woff"),
+		url("./font/Roboto-Bold.ttf") format("truetype"),
+		url("./font/Roboto-Bold.svg") format("svg");
+}
