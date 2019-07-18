@@ -1,4 +1,5 @@
 //Page section
+const logo = document.querySelector('.logo');
 const startBtn = document.querySelector('nav li:nth-of-type(1)');
 const menuBtn = document.querySelector('nav li:nth-of-type(2)');
 const aboutBtn = document.querySelector('nav li:nth-of-type(3)');
@@ -28,6 +29,10 @@ const smoothScroll = (section, duration) => {
 }
 
 //Scroll menu
+logo.addEventListener('click', function () {
+    smoothScroll('.page-home', 1000);
+})
+
 startBtn.addEventListener('click', function () {
     smoothScroll('.page-home', 1000);
 })

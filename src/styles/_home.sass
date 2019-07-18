@@ -1,63 +1,75 @@
 .page-home
     position: relative
     overflow: hidden
-    background-color: #1c2a35
-    @media (orientation: landscape) and (min-width: 500px)
-        // padding-left: 60px
+    height: 90vh
+    width: auto
     .slider-image
-        width: auto
-        height: 100vh
         overflow: hidden
-        // animation: animate-background linear 5s infinite
-        @media (orientation: landscape) and (min-width: 500px)
-            height: auto
-            width: 100vw
-        @media (min-width: 1024px)
-            height: 90vh
-        img
-            position: absolute
-            bottom: 0
-            max-width: 100%
-            // height: 36%
-    .slogan
+        min-width: 100%
+        position: fixed
+        z-index: -1
+    .slider-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 30px
+        width: 100%
+        height: 100%
         position: absolute
-        width: 274px
-        right: 26px
-        top: 268.38px
-        font-family: Kaushan Script
-        font-style: normal
-        font-weight: normal
-        font-size: 36px
-        line-height: 40px
-        text-align: center
         color: #ffffff
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-        transform: rotate(-6.37deg)
         z-index: 999
-        @media (orientation: landscape) and (min-width: 500px)
-            top: 30%
-        @media (min-width: 1024px)
-            font-size: 3.5rem
-            width: 450px
-            line-height: 3.5rem
-@keyframes animate-background
-    0%
-        opacity: 0
-    8%
-        opacity: .2
-    10%
-        opacity: .5
-    15%
-        opacity: .8    
-    20%
-        opacity: 1
-    80%
-        opacity: 1
-    85%
-        opacity: .8
-    90%
-        opacity: .5
-    92%
-        opacity: .2
-    100%
-        opacity: 0
+        .original
+            font-size: 2.5rem
+            line-height: 3rem
+            text-align: center
+            text-transform: uppercase
+            font-weight: 700
+            padding: 20px 0
+            span
+                font-size: 3.5rem
+                @media (orientation: landscape) and (min-height: 320px)
+                    font-size: 1.5rem
+                @media (min-width: 1000px)
+                    font-size: 4.5rem
+                    padding: 20px 0
+            @media (orientation: landscape) and (min-height: 320px)
+                padding: 5px 0
+                font-size: 1.5rem
+            @media (min-width: 1000px)
+                font-size: 4rem
+                padding: 20px 0
+        .lovers
+            font-size: 2.5rem    
+            padding: 20px 0
+            @media (orientation: landscape) and (min-height: 320px)
+                font-size: 1.3rem
+                padding: 5px 0   
+            @media (orientation: landscape) and (min-height: 350px)
+                padding: 5px     
+            @media (min-width: 1000px)
+                font-size: 4rem
+                padding: 20px 0
+        .only
+            display: flex
+            flex-direction: column
+            align-items: center
+            font-size: 1.5rem
+            text-transform: uppercase
+            font-weight: 700
+            padding: 20px
+            background-color: $deflaut
+            span
+                padding-left: 5px
+                @media (min-width: 1000px)
+                    padding-top: 15px
+            @media (orientation: landscape) and (min-height: 320px)
+                flex-direction: row
+                padding: 5px
+            @media (min-width: 1000px)
+                flex-direction: column
+                font-size: 2.5rem
+                padding: 20px
+    @media (orientation: landscape) and (min-height: 320px)
+        height: 100vh
